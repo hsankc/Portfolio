@@ -1,3 +1,5 @@
+"use client";
+
 import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 import type { Locale } from "@/types/content";
 import { dictionary } from "@/lib/i18n";
@@ -15,11 +17,24 @@ export function ContactPage({ locale }: { locale: Locale }) {
     { label: "ilion7.web", href: site.instagramVenture, icon: Instagram }
   ];
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name")?.toString() || "";
+    const email = formData.get("email")?.toString() || "";
+    const message = formData.get("message")?.toString() || "";
+
+    const subject = encodeURIComponent(`Portfolio İletişim Formu: ${name}`);
+    const body = encodeURIComponent(`Gönderen: ${name}\nEmail: ${email}\n\nMesaj:\n${message}`);
+
+    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
+  };
+
   return (
     <AppShell locale={locale}>
       <main>
         <PageHeader locale={locale} eyebrow="Contact" title={copy.pages.contactTitle} lead={copy.pages.contactLead} />
-        <section className="mx-auto grid w-full max-w-7xl gap-8 px-5 pb-16 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
+        <section className="mx-auto grid w-full max-w-7xl gap-8 px-5 pb-32 sm:px-8 lg:grid-cols-[0.8fr_1.2fr]">
           <Reveal>
             <div className="grid gap-3">
               {contactLinks.map((item) => {
@@ -43,9 +58,7 @@ export function ContactPage({ locale }: { locale: Locale }) {
           </Reveal>
           <Reveal delay={0.08}>
             <form
-              action={`mailto:${site.email}`}
-              method="post"
-              encType="text/plain"
+              onSubmit={handleSubmit}
               className="rounded-lg border border-slate-200 bg-white/82 p-5 shadow-soft dark:border-white/10 dark:bg-slate-950/70"
             >
               <div className="grid gap-4 sm:grid-cols-2">
@@ -53,6 +66,7 @@ export function ContactPage({ locale }: { locale: Locale }) {
                   {locale === "tr" ? "Ad" : "Name"}
                   <input
                     name="name"
+                    required
                     className="h-12 rounded-md border border-slate-200 bg-white px-3 text-slate-950 outline-none transition focus:border-blue-400 dark:border-white/10 dark:bg-slate-900 dark:text-white"
                   />
                 </label>
@@ -61,6 +75,7 @@ export function ContactPage({ locale }: { locale: Locale }) {
                   <input
                     name="email"
                     type="email"
+                    required
                     className="h-12 rounded-md border border-slate-200 bg-white px-3 text-slate-950 outline-none transition focus:border-blue-400 dark:border-white/10 dark:bg-slate-900 dark:text-white"
                   />
                 </label>
@@ -70,6 +85,7 @@ export function ContactPage({ locale }: { locale: Locale }) {
                 <textarea
                   name="message"
                   rows={7}
+                  required
                   className="rounded-md border border-slate-200 bg-white p-3 text-slate-950 outline-none transition focus:border-blue-400 dark:border-white/10 dark:bg-slate-900 dark:text-white"
                 />
               </label>

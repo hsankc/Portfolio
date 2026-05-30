@@ -41,7 +41,7 @@ export function DockNav({ locale }: DockNavProps) {
     : `/en${pathname === "/" ? "" : pathname}`;
 
   return (
-    <div className="fixed inset-x-0 bottom-4 z-50 flex justify-center px-4">
+    <div className="fixed inset-x-0 z-50 flex justify-center px-4" style={{ bottom: 'calc(1rem + env(safe-area-inset-bottom))' }}>
       <nav className="flex max-w-[calc(100vw-2rem)] items-center gap-1 overflow-x-auto rounded-full border border-slate-200 bg-white/86 p-1.5 shadow-soft backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/84">
         <div className="hidden items-center gap-1 px-2 text-xs font-semibold text-slate-500 sm:flex dark:text-slate-400">
           <Sparkles className="h-4 w-4 text-amber" />

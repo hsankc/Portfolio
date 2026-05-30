@@ -613,6 +613,28 @@ export const certificateProofs = [
 ];
 
 export const eventCards: EventCard[] = [
+  // ── Kulüp & Etkinlik Kartları ──
+  {
+    "title": {
+      "tr": "ÇOMÜ HAVACILIK KULÜBÜ BAŞKANLIK",
+      "en": "ÇOMÜ HAVACILIK KULÜBÜ BAŞKANLIK"
+    },
+    "event": {
+      "tr": "ÇOMÜ HAVACILIK KULÜBÜ BAŞKANLIK",
+      "en": "ÇOMÜ HAVACILIK KULÜBÜ BAŞKANLIK"
+    },
+    "role": {
+      "tr": "Başkan",
+      "en": "President"
+    },
+    "year": "2024-2026",
+    "image": "/images/cards/cutouts/event-card-17.png",
+    "sourceImage": "/images/cards/cutouts/event-card-17.png",
+    "accent": "coral",
+    "rotation": -1.6,
+    "hanger": "double",
+    "orientation": "portrait"
+  },
   {
     "title": {
       "tr": "18 Mart Etkinlikleri Protokol Girişi",
@@ -657,43 +679,43 @@ export const eventCards: EventCard[] = [
   },
   {
     "title": {
-      "tr": "Ankara BTK ai hackathonu",
-      "en": "Ankara BTK ai hackathonu"
+      "tr": "JANDARMA ÇELİK KANATLAR SÖYLEŞİ KOORDİNATÖRÜ",
+      "en": "JANDARMA ÇELİK KANATLAR SÖYLEŞİ KOORDİNATÖRÜ"
     },
     "event": {
-      "tr": "Ankara BTK ai hackathonu",
-      "en": "Ankara BTK ai hackathonu"
+      "tr": "JANDARMA ÇELİK KANATLAR SÖYLEŞİ KOORDİNATÖRÜ",
+      "en": "JANDARMA ÇELİK KANATLAR SÖYLEŞİ KOORDİNATÖRÜ"
     },
     "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
+      "tr": "Koordinatör",
+      "en": "Coordinator"
     },
     "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-03.png",
-    "sourceImage": "/images/cards/cutouts/event-card-03.png",
-    "accent": "teal",
-    "rotation": 3.1,
+    "image": "/images/cards/cutouts/event-card-09.png",
+    "sourceImage": "/images/cards/cutouts/event-card-09.png",
+    "accent": "cyan",
+    "rotation": 3.8,
     "hanger": "double",
     "orientation": "portrait"
   },
   {
     "title": {
-      "tr": "Ankara BTK Aİ Hackathonu",
-      "en": "Ankara BTK Aİ Hackathonu"
+      "tr": "SOLOTÜRK SÖYLEŞİ KOORDİNATÖRÜ",
+      "en": "SOLOTÜRK SÖYLEŞİ KOORDİNATÖRÜ"
     },
     "event": {
-      "tr": "Ankara BTK Aİ Hackathonu",
-      "en": "Ankara BTK Aİ Hackathonu"
+      "tr": "SOLOTÜRK SÖYLEŞİ KOORDİNATÖRÜ",
+      "en": "SOLOTÜRK SÖYLEŞİ KOORDİNATÖRÜ"
     },
     "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
+      "tr": "Koordinatör",
+      "en": "Coordinator"
     },
     "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-04.png",
-    "sourceImage": "/images/cards/cutouts/event-card-04.png",
+    "image": "/images/cards/cutouts/event-card-14.png",
+    "sourceImage": "/images/cards/cutouts/event-card-14.png",
     "accent": "cyan",
-    "rotation": -4,
+    "rotation": 0.3,
     "hanger": "single",
     "orientation": "portrait"
   },
@@ -720,16 +742,59 @@ export const eventCards: EventCard[] = [
   },
   {
     "title": {
+      "tr": "UAVET PROJE ÇALIŞTAYI",
+      "en": "UAVET PROJE ÇALIŞTAYI"
+    },
+    "event": {
+      "tr": "UAVET PROJE ÇALIŞTAYI",
+      "en": "UAVET PROJE ÇALIŞTAYI"
+    },
+    "role": {
+      "tr": "Katılımcı",
+      "en": "Participant"
+    },
+    "year": "2024-2026",
+    "image": "/images/cards/cutouts/event-card-16.png",
+    "sourceImage": "/images/cards/cutouts/event-card-16.png",
+    "accent": "blue",
+    "rotation": -4.8,
+    "hanger": "single",
+    "orientation": "portrait"
+  },
+  // ── BTK / Hackathon Kartları ──
+  {
+    "title": {
+      "tr": "Ankara BTK Aİ Hackathonu",
+      "en": "Ankara BTK AI Hackathon"
+    },
+    "event": {
+      "tr": "Ankara BTK Aİ Hackathonu",
+      "en": "Ankara BTK AI Hackathon"
+    },
+    "role": {
+      "tr": "Katılımcı",
+      "en": "Participant"
+    },
+    "year": "2024-2026",
+    "image": "/images/cards/cutouts/event-card-04.png",
+    "sourceImage": "/images/cards/cutouts/event-card-04.png",
+    "accent": "cyan",
+    "rotation": -4,
+    "hanger": "single",
+    "orientation": "portrait"
+  },
+  {
+    "title": {
       "tr": "BTK AKADEMİ ANKARA Aİ HACKATHON",
-      "en": "BTK AKADEMİ ANKARA Aİ HACKATHON"
+      "en": "BTK AKADEMİ ANKARA AI HACKATHON"
     },
     "event": {
       "tr": "BTK AKADEMİ ANKARA Aİ HACKATHON",
-      "en": "BTK AKADEMİ ANKARA Aİ HACKATHON"
+      "en": "BTK AKADEMİ ANKARA AI HACKATHON"
     },
     "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
+      "tr": "Katılımcı",
+      "en": "Participant"
     },
     "year": "2024-2026",
     "image": "/images/cards/cutouts/event-card-06.png",
@@ -739,6 +804,92 @@ export const eventCards: EventCard[] = [
     "hanger": "single",
     "orientation": "portrait"
   },
+  // ── Monad Blitz Hackathon Serisi ──
+  {
+    "title": {
+      "tr": "MONAD BLİTZ ANKARA",
+      "en": "MONAD BLITZ ANKARA"
+    },
+    "event": {
+      "tr": "MONAD BLİTZ ANKARA",
+      "en": "MONAD BLITZ ANKARA"
+    },
+    "role": {
+      "tr": "Katılımcı",
+      "en": "Participant"
+    },
+    "year": "2024-2026",
+    "image": "/images/cards/cutouts/event-card-10.png",
+    "sourceImage": "/images/cards/cutouts/event-card-10.png",
+    "accent": "amber",
+    "rotation": 0,
+    "hanger": "single",
+    "orientation": "portrait"
+  },
+  {
+    "title": {
+      "tr": "MONAD BLİTZ İSTANBUL",
+      "en": "MONAD BLITZ ISTANBUL"
+    },
+    "event": {
+      "tr": "MONAD BLİTZ İSTANBUL",
+      "en": "MONAD BLITZ ISTANBUL"
+    },
+    "role": {
+      "tr": "Katılımcı",
+      "en": "Participant"
+    },
+    "year": "2024-2026",
+    "image": "/images/cards/cutouts/event-card-12.png",
+    "sourceImage": "/images/cards/cutouts/event-card-12.png",
+    "accent": "coral",
+    "rotation": -0.9,
+    "hanger": "single",
+    "orientation": "portrait"
+  },
+  {
+    "title": {
+      "tr": "MONAD BLİTZ ÇANAKKALE",
+      "en": "MONAD BLITZ ÇANAKKALE"
+    },
+    "event": {
+      "tr": "MONAD BLİTZ ÇANAKKALE",
+      "en": "MONAD BLITZ ÇANAKKALE"
+    },
+    "role": {
+      "tr": "Katılımcı",
+      "en": "Participant"
+    },
+    "year": "2024-2026",
+    "image": "/images/cards/cutouts/event-card-11.png",
+    "sourceImage": "/images/cards/cutouts/event-card-11.png",
+    "accent": "blue",
+    "rotation": -4.6,
+    "hanger": "double",
+    "orientation": "portrait"
+  },
+  {
+    "title": {
+      "tr": "MONAD BLİTZ İZMİR",
+      "en": "MONAD BLITZ IZMIR"
+    },
+    "event": {
+      "tr": "MONAD BLİTZ İZMİR",
+      "en": "MONAD BLITZ IZMIR"
+    },
+    "role": {
+      "tr": "Katılımcı",
+      "en": "Participant"
+    },
+    "year": "2024-2026",
+    "image": "/images/cards/cutouts/event-card-13.png",
+    "sourceImage": "/images/cards/cutouts/event-card-13.png",
+    "accent": "teal",
+    "rotation": 1.2,
+    "hanger": "double",
+    "orientation": "portrait"
+  },
+  // ── Konferans & DevFest Kartları ──
   {
     "title": {
       "tr": "GOOGLE DEVFEST 2023",
@@ -749,8 +900,8 @@ export const eventCards: EventCard[] = [
       "en": "GOOGLE DEVFEST 2023"
     },
     "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
+      "tr": "Katılımcı",
+      "en": "Attendee"
     },
     "year": "2024-2026",
     "image": "/images/cards/cutouts/event-card-07.png",
@@ -770,8 +921,8 @@ export const eventCards: EventCard[] = [
       "en": "GOOGLE DEVFEST 2024"
     },
     "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
+      "tr": "Katılımcı",
+      "en": "Attendee"
     },
     "year": "2024-2026",
     "image": "/images/cards/cutouts/event-card-08.png",
@@ -783,132 +934,6 @@ export const eventCards: EventCard[] = [
   },
   {
     "title": {
-      "tr": "JANDARMA ÇELİK KANATLAR SÖYLEŞİ KOORDİNATÖRÜ",
-      "en": "JANDARMA ÇELİK KANATLAR SÖYLEŞİ KOORDİNATÖRÜ"
-    },
-    "event": {
-      "tr": "JANDARMA ÇELİK KANATLAR SÖYLEŞİ KOORDİNATÖRÜ",
-      "en": "JANDARMA ÇELİK KANATLAR SÖYLEŞİ KOORDİNATÖRÜ"
-    },
-    "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-09.png",
-    "sourceImage": "/images/cards/cutouts/event-card-09.png",
-    "accent": "cyan",
-    "rotation": 3.8,
-    "hanger": "double",
-    "orientation": "portrait"
-  },
-  {
-    "title": {
-      "tr": "MONAD BLİTZ ANKARA",
-      "en": "MONAD BLİTZ ANKARA"
-    },
-    "event": {
-      "tr": "MONAD BLİTZ ANKARA",
-      "en": "MONAD BLİTZ ANKARA"
-    },
-    "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-10.png",
-    "sourceImage": "/images/cards/cutouts/event-card-10.png",
-    "accent": "amber",
-    "rotation": 0,
-    "hanger": "single",
-    "orientation": "portrait"
-  },
-  {
-    "title": {
-      "tr": "MONAD BLİTZ ÇANAKKALE",
-      "en": "MONAD BLİTZ ÇANAKKALE"
-    },
-    "event": {
-      "tr": "MONAD BLİTZ ÇANAKKALE",
-      "en": "MONAD BLİTZ ÇANAKKALE"
-    },
-    "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-11.png",
-    "sourceImage": "/images/cards/cutouts/event-card-11.png",
-    "accent": "blue",
-    "rotation": -4.6,
-    "hanger": "double",
-    "orientation": "portrait"
-  },
-  {
-    "title": {
-      "tr": "MONAD BLİTZ İSTANBUL",
-      "en": "MONAD BLİTZ İSTANBUL"
-    },
-    "event": {
-      "tr": "MONAD BLİTZ İSTANBUL",
-      "en": "MONAD BLİTZ İSTANBUL"
-    },
-    "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-12.png",
-    "sourceImage": "/images/cards/cutouts/event-card-12.png",
-    "accent": "coral",
-    "rotation": -0.9,
-    "hanger": "single",
-    "orientation": "portrait"
-  },
-  {
-    "title": {
-      "tr": "MONAD BLİTZ İZMİR",
-      "en": "MONAD BLİTZ İZMİR"
-    },
-    "event": {
-      "tr": "MONAD BLİTZ İZMİR",
-      "en": "MONAD BLİTZ İZMİR"
-    },
-    "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-13.png",
-    "sourceImage": "/images/cards/cutouts/event-card-13.png",
-    "accent": "teal",
-    "rotation": 1.2,
-    "hanger": "double",
-    "orientation": "portrait"
-  },
-  {
-    "title": {
-      "tr": "SOLOTÜRK SÖYLEŞİ KOORDİNATÖRÜ",
-      "en": "SOLOTÜRK SÖYLEŞİ KOORDİNATÖRÜ"
-    },
-    "event": {
-      "tr": "SOLOTÜRK SÖYLEŞİ KOORDİNATÖRÜ",
-      "en": "SOLOTÜRK SÖYLEŞİ KOORDİNATÖRÜ"
-    },
-    "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-14.png",
-    "sourceImage": "/images/cards/cutouts/event-card-14.png",
-    "accent": "cyan",
-    "rotation": 0.3,
-    "hanger": "single",
-    "orientation": "portrait"
-  },
-  {
-    "title": {
       "tr": "TIPTA YAPAY ZEKA KONGRESİ",
       "en": "TIPTA YAPAY ZEKA KONGRESİ"
     },
@@ -917,56 +942,14 @@ export const eventCards: EventCard[] = [
       "en": "TIPTA YAPAY ZEKA KONGRESİ"
     },
     "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
+      "tr": "Katılımcı",
+      "en": "Attendee"
     },
     "year": "2024-2026",
     "image": "/images/cards/cutouts/event-card-15.png",
     "sourceImage": "/images/cards/cutouts/event-card-15.png",
     "accent": "amber",
     "rotation": 3.9,
-    "hanger": "double",
-    "orientation": "portrait"
-  },
-  {
-    "title": {
-      "tr": "UAVET PROJE ÇALIŞTAYI",
-      "en": "UAVET PROJE ÇALIŞTAYI"
-    },
-    "event": {
-      "tr": "UAVET PROJE ÇALIŞTAYI",
-      "en": "UAVET PROJE ÇALIŞTAYI"
-    },
-    "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-16.png",
-    "sourceImage": "/images/cards/cutouts/event-card-16.png",
-    "accent": "blue",
-    "rotation": -4.8,
-    "hanger": "single",
-    "orientation": "portrait"
-  },
-  {
-    "title": {
-      "tr": "ÇOMÜ HAVACILIK KULÜBÜ BAŞKANLIK",
-      "en": "ÇOMÜ HAVACILIK KULÜBÜ BAŞKANLIK"
-    },
-    "event": {
-      "tr": "ÇOMÜ HAVACILIK KULÜBÜ BAŞKANLIK",
-      "en": "ÇOMÜ HAVACILIK KULÜBÜ BAŞKANLIK"
-    },
-    "role": {
-      "tr": "Katılımcı / Görevli",
-      "en": "Participant / Staff"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-17.png",
-    "sourceImage": "/images/cards/cutouts/event-card-17.png",
-    "accent": "coral",
-    "rotation": -1.6,
     "hanger": "double",
     "orientation": "portrait"
   }

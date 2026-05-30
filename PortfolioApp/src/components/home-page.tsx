@@ -76,7 +76,7 @@ export function HomePage({ locale }: { locale: Locale }) {
                     Web3
                   </span>
                   <span className="rounded-full bg-amber-50 px-3 py-1 text-[11px] font-black text-amber-700 dark:bg-amber-900/30 dark:text-amber-300">
-                    {locale === "tr" ? "İHA Lideri" : "UAV Lead"}
+                    {locale === "tr" ? "İHA Pilotu" : "UAV Pilot"}
                   </span>
                 </div>
               </div>
