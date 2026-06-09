@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Github, Linkedin, Mail, RadioTower, ShieldCheck, Sparkles, Award, Rocket, Instagram } from "lucide-react";
+import { ArrowUpRight, Award, CalendarDays, Github, Instagram, Linkedin, Mail, MapPin, RadioTower, Rocket, ShieldCheck, Sparkles } from "lucide-react";
 import type { Locale } from "@/types/content";
 import { dictionary, routeFor } from "@/lib/i18n";
 import { featuredProjects, hackathons, leadershipProofs, site, stats, text, skills } from "@/lib/content";
@@ -111,10 +111,19 @@ export function HomePage({ locale }: { locale: Locale }) {
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
                   {/* InterKey Venture */}
                   <div className="group relative rounded-xl border border-slate-100 bg-slate-50/50 p-5 transition hover:border-blue-200 hover:bg-white dark:border-white/5 dark:bg-slate-900/30 dark:hover:border-blue-500/30 dark:hover:bg-slate-900/60">
-                    <div className="flex items-start justify-between">
-                      <div>
+                    <div className="flex items-start gap-4">
+                      <div className="relative grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-sm dark:border-white/10 dark:bg-white">
+                        <Image
+                          src="/images/logos/interkey-logo.png"
+                          alt="InterKey logo"
+                          fill
+                          sizes="64px"
+                          className="object-contain p-1.5"
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1">
                         <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-[10px] font-bold text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
-                          Teknopark Ön Kuluçka
+                          {locale === "tr" ? "Teknopark Ön Kuluçka" : "Teknopark Pre-Incubation"}
                         </span>
                         <h3 className="mt-2 text-lg font-black text-slate-950 dark:text-white">InterKey</h3>
                       </div>
@@ -127,8 +136,17 @@ export function HomePage({ locale }: { locale: Locale }) {
 
                   {/* ilion7 Venture */}
                   <div className="group relative rounded-xl border border-slate-100 bg-slate-50/50 p-5 transition hover:border-purple-200 hover:bg-white dark:border-white/5 dark:bg-slate-900/30 dark:hover:border-purple-500/30 dark:hover:bg-slate-900/60">
-                    <div className="flex items-start justify-between">
-                      <div>
+                    <div className="flex items-start gap-4">
+                      <div className="relative grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-sm dark:border-white/10 dark:bg-white">
+                        <Image
+                          src="/images/logos/ilion7-logo.png"
+                          alt="ilion7.web logo"
+                          fill
+                          sizes="64px"
+                          className="object-contain p-1.5"
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1">
                         <span className="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-[10px] font-bold text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
                           Web Studio / Venture
                         </span>
@@ -159,7 +177,7 @@ export function HomePage({ locale }: { locale: Locale }) {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-teal-700 dark:text-teal-200">{copy.home.featured}</p>
               <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-5xl dark:text-white">
-                {locale === "tr" ? "Kanıtlı üretim vitrini." : "Builds with receipts."}
+                {locale === "tr" ? "Öne çıkan projeler." : "Featured projects."}
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-7 text-slate-600 dark:text-slate-300">{copy.home.proofLine}</p>
@@ -173,84 +191,66 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </section>
 
-        {/* Vertical Hackathon Route Section */}
-        <section className="relative border-y border-slate-200 bg-slate-50/50 py-20 dark:border-white/5 dark:bg-slate-950/20 overflow-hidden">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-          
-          <div className="relative mx-auto w-full max-w-4xl px-5 sm:px-8">
-            <div className="mb-12 flex flex-col items-center text-center">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-cyan-200 shadow-glow mb-4">
-                <RadioTower className="h-6 w-6 animate-pulse" />
+        <section className="relative border-y border-slate-200 bg-white/42 py-10 dark:border-white/5 dark:bg-slate-950/20">
+          <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
+            <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-blue-700 dark:text-cyan-200">
+                  <RadioTower className="h-4 w-4" />
+                  {copy.home.hackathonStrip}
+                </p>
+                <h2 className="mt-2 text-2xl font-black text-slate-950 sm:text-3xl dark:text-white">
+                  {locale === "tr" ? "Kısa yarışma yol haritası." : "Compact competition roadmap."}
+                </h2>
               </div>
-              <h2 className="text-3xl font-black text-slate-950 dark:text-white sm:text-4xl">{copy.home.hackathonStrip}</h2>
-              <p className="text-sm font-bold text-slate-500 dark:text-slate-400 mt-2 max-w-md">
-                {locale === "tr" ? "Katıldığım yarışmalar ve canlıya çıkan projeler" : "Competitions and live product builds"}
-              </p>
+              <Link
+                href={routeFor(locale, "/hackathons")}
+                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-black text-slate-800 transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-600 dark:border-white/10 dark:bg-slate-950/70 dark:text-white dark:hover:border-cyan-300 dark:hover:text-cyan-200"
+              >
+                {locale === "tr" ? "Tüm rotayı aç" : "Open full route"}
+                <ArrowUpRight className="h-4 w-4" />
+              </Link>
             </div>
 
-            {/* Vertical Timeline container */}
-            <div className="relative mt-12 space-y-12">
-              {/* Vertical timeline track line */}
-              <div className="absolute left-6 top-3 bottom-3 w-[4px] bg-gradient-to-b from-blue-500 via-teal-500 to-amber-500 dark:from-blue-500/30 dark:via-cyan-500/40 dark:to-amber-500/30 z-0 rounded-full"></div>
-
-              {hackathons.map((event, index) => {
-                const hasOutcome = !!event.outcome;
-                return (
-                  <Reveal key={`${event.title}-${event.project}`} delay={index * 0.1} className="relative z-10 flex items-start gap-8 pl-1.5">
-                    {/* Node circle on timeline */}
-                    <div className={`relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full border bg-white shadow-soft transition-all duration-300 dark:bg-slate-950 ${
-                      hasOutcome 
-                        ? "border-amber-400 dark:border-amber-400/50 shadow-amber-200/50 dark:shadow-amber-500/10 scale-110" 
-                        : "border-blue-200 dark:border-white/10"
-                    }`}>
-                      {hasOutcome ? (
-                        <Award className="h-5 w-5 text-amber-500 animate-bounce" />
-                      ) : (
-                        <div className="h-3 w-3 rounded-full bg-blue-500 dark:bg-cyan-300 animate-pulse"></div>
-                      )}
-                    </div>
-
-                    {/* Content Area */}
-                    <div className="flex-1">
-                      <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 dark:text-slate-500 px-2 py-0.5 bg-slate-100 dark:bg-slate-900 rounded">
-                        {event.date}
-                      </span>
-                      
+            <div className="relative overflow-x-auto pb-2">
+              <div className="absolute left-6 right-6 top-6 hidden border-t border-dashed border-slate-300 dark:border-white/20 md:block" />
+              <div className="relative grid min-w-[920px] grid-cols-8 gap-3 md:min-w-0">
+                {hackathons.map((event, index) => {
+                  const hasOutcome = Boolean(event.outcome);
+                  return (
+                    <Reveal key={`${event.title}-${event.project}`} delay={index * 0.035}>
                       <Link
-                        href={event.projectSlug ? routeFor(locale, `/projects/${event.projectSlug}`) : routeFor(locale, "/hackathons")}
-                        className="group mt-3 block w-full rounded-2xl border border-slate-200/80 bg-white p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-glow dark:border-white/10 dark:bg-slate-950/70 dark:hover:border-cyan-300/40"
+                        href={routeFor(locale, "/hackathons")}
+                        className="group block h-full rounded-lg border border-slate-200 bg-white/86 p-3 shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-glow dark:border-white/10 dark:bg-slate-950/72 dark:hover:border-cyan-300"
                       >
-                        <div className="flex items-center justify-between gap-4">
-                          <h3 className="font-black text-lg text-slate-950 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-200 transition-colors">
-                            {event.title}
-                          </h3>
-                          {hasOutcome && (
-                            <span className="shrink-0 rounded bg-amber-50 px-2.5 py-0.5 text-xs font-black text-amber-700 dark:bg-amber-950/30 dark:text-amber-300 animate-pulse">
-                              🏆 {event.outcome}
-                            </span>
-                          )}
+                        <span className={`mb-3 grid h-8 w-8 place-items-center rounded-full border bg-white shadow-sm dark:bg-slate-950 ${
+                          hasOutcome ? "border-amber-300 text-amber-600 dark:border-amber-300/40 dark:text-amber-200" : "border-blue-200 text-blue-600 dark:border-cyan-300/30 dark:text-cyan-200"
+                        }`}>
+                          {hasOutcome ? <Award className="h-4 w-4" /> : <span className="h-2.5 w-2.5 rounded-full bg-current" />}
+                        </span>
+                        <h3 className="min-h-12 text-sm font-black leading-5 text-slate-950 group-hover:text-blue-600 dark:text-white dark:group-hover:text-cyan-200">
+                          {event.title}
+                        </h3>
+                        <div className="mt-3 space-y-1.5 text-[11px] font-bold text-slate-500 dark:text-slate-400">
+                          <p className="inline-flex items-center gap-1.5">
+                            <CalendarDays className="h-3.5 w-3.5" />
+                            {event.date}
+                          </p>
+                          <p className="inline-flex items-center gap-1.5">
+                            <MapPin className="h-3.5 w-3.5" />
+                            {event.location}
+                          </p>
                         </div>
-
-                        <p className="mt-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                          {text(event.summary, locale)}
-                        </p>
-
-                        <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 dark:border-white/5">
-                          <span className="text-xs font-black text-slate-400 dark:text-slate-500">
-                            📍 {event.location}
+                        {hasOutcome ? (
+                          <span className="mt-3 inline-flex rounded-full bg-amber-50 px-2 py-1 text-[10px] font-black uppercase tracking-wide text-amber-800 dark:bg-amber-400/10 dark:text-amber-200">
+                            {event.outcome}
                           </span>
-                          <div className="flex items-center gap-1.5">
-                            <span className="text-xs font-black text-blue-600 dark:text-cyan-200">
-                              {event.project}
-                            </span>
-                            <ArrowUpRight className="h-4 w-4 text-slate-400 group-hover:text-blue-600 dark:group-hover:text-cyan-200 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                          </div>
-                        </div>
+                        ) : null}
                       </Link>
-                    </div>
-                  </Reveal>
-                );
-              })}
+                    </Reveal>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </section>

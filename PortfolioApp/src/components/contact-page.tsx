@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { AtSign, Github, Instagram, Linkedin, Mail, Send } from "lucide-react";
 import type { Locale } from "@/types/content";
 import { dictionary } from "@/lib/i18n";
 import { site } from "@/lib/content";
@@ -14,6 +14,9 @@ export function ContactPage({ locale }: { locale: Locale }) {
     { label: "Email", href: `mailto:${site.email}`, icon: Mail },
     { label: "GitHub", href: site.github, icon: Github },
     { label: "LinkedIn", href: site.linkedin, icon: Linkedin },
+    { label: "Instagram", href: site.instagram, icon: Instagram },
+    { label: "X", href: site.x, icon: AtSign },
+    { label: "Telegram", href: site.telegram, icon: Send },
     { label: "ilion7.web", href: site.instagramVenture, icon: Instagram }
   ];
 

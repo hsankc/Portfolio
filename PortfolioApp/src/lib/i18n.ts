@@ -41,16 +41,16 @@ export const dictionary = {
       eyebrow: "Software + AI/Web3 + UAV Leadership",
       title: "Hasan Kaşıkcı",
       subtitle:
-        "Bilgisayar Mühendisliği öğrencisi. Çanakkale Teknopark ön kuluçkasındaki girişimi InterKey ve web stüdyosu ilion7.web ile projeler üreten; AI, Web3 ve ÇOMÜ Havacılık topluluğuna liderlik eden bir builder.",
+        "ÇOMÜ'de Bilgisayar Mühendisliği 3. sınıf öğrencisi. Çanakkale Teknopark ön kuluçkasında motosikletler için akıllı gidon kontrolcüsü olan donanım girişimi InterKey'i geliştiriyor ve ilion7.web dijital stüdyosu ile modern çözümler üretiyor. Web3, yapay zeka ve modern web (Next.js) teknolojileriyle uçtan uca projeler inşa eden; aynı zamanda ÇOMÜ Havacılık Kulübü'ne başkanlık yapan tutkulu bir 'builder'.",
       proofLine:
-        "Sadece proje listesi değil; yarışmalar, canlı ürünler, kulüp liderliği ve sertifikalarla büyüyen uzun vadeli bir çalışma vitrini.",
+        "Canlı ürünler, ödüllü hackathon projeleri, kulüp liderliği ve sertifikalarla desteklenen seçili işler.",
       featured: "Öne Çıkan İşler",
       hackathonStrip: "Hackathon Rotası",
       leadership: "Liderlik Kanıtları Koleksiyonu",
       skillsTitle: "Teknolojik Yetkinlikler",
       venturesTitle: "Girişimler & Oluşumlar",
-      interkeyDesc: "Çanakkale Teknopark ön kuluçka aşamasında yer alan, yenilikçi çözümler sunan teknoloji girişimi.",
-      ilionDesc: "Modern, hızlı ve estetik web siteleri üreten kişisel web geliştirme girişimi."
+      interkeyDesc: "Motosikletler için akıllı gidon kontrolcüsü geliştiren, Çanakkale Teknopark ön kuluçkasındaki donanım girişimi.",
+      ilionDesc: "Modern web siteleri, dijital vitrinler ve hızlı ürün arayüzleri üreten kişisel dijital stüdyo."
     },
     pages: {
       projectsTitle: "Tüm Projeler",
@@ -97,16 +97,16 @@ export const dictionary = {
       eyebrow: "Software + AI/Web3 + UAV Leadership",
       title: "Hasan Kaşıkcı",
       subtitle:
-        "Computer Engineering student. Building ventures like InterKey (Çanakkale Teknopark pre-incubation) and ilion7.web studio; active in AI, Web3, and leading the COMU Aviation community.",
+        "Third-year Computer Engineering student at ÇOMÜ. Building InterKey, a Çanakkale Teknopark pre-incubation hardware venture for smart motorcycle handlebar control, while shipping modern solutions through the ilion7.web digital studio. A passionate builder creating end-to-end projects with Web3, AI, and modern web technologies like Next.js, while also leading the ÇOMÜ Aviation Club.",
       proofLine:
-        "More than a project list: a long-term portfolio backed by competitions, live products, community leadership, and certificates.",
+        "Selected work backed by live products, award-winning hackathon builds, community leadership, and certificates.",
       featured: "Featured Work",
       hackathonStrip: "Hackathon Route",
       leadership: "Leadership Proof Collection",
       skillsTitle: "Tech Stack & Skills",
       venturesTitle: "Startups & Ventures",
-      interkeyDesc: "A tech startup in Çanakkale Teknopark pre-incubation delivering innovative solutions.",
-      ilionDesc: "Personal web development venture crafting modern, blazing-fast, and premium websites."
+      interkeyDesc: "A hardware venture in Çanakkale Teknopark pre-incubation building a smart motorcycle handlebar controller.",
+      ilionDesc: "A personal digital studio shipping modern websites, digital showcases, and fast product interfaces."
     },
     pages: {
       projectsTitle: "All Projects",

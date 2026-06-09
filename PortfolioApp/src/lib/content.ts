@@ -6,6 +6,9 @@ export const site = {
   email: "hasankasikci80@gmail.com",
   github: "https://github.com/hsankc",
   linkedin: "https://www.linkedin.com/in/hasankasikci0",
+  instagram: "https://www.instagram.com/hsankc/",
+  x: "https://x.com/hsankc0",
+  telegram: "https://t.me/Hsankc0",
   instagramVenture: "https://www.instagram.com/ilion7.web/?hl=tr",
   profileImage: "/images/profile/hasan-kasikci.jpg"
 };
@@ -181,8 +184,8 @@ export const projects: Project[] = [
     title: "QuakeGrid",
     slug: "quakegrid",
     category: "Web3 / Hackathon",
-    status: ["Featured", "Live", "Hackathon Build"],
-    featuredRank: 5,
+    status: ["Live", "Hackathon Build"],
+    featuredRank: null,
     role: { tr: "Builder / geliştirici", en: "Builder / developer" },
     summary: {
       tr: "Monad Blitz Çanakkale hackathonu için geliştirilen Web3 projesi.",

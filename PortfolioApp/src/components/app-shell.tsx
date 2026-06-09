@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Locale } from "@/types/content";
 import { dictionary, routeFor } from "@/lib/i18n";
 import { site } from "@/lib/content";
@@ -20,8 +21,14 @@ export function AppShell({ locale, children }: AppShellProps) {
       <div className="relative z-10 min-h-screen pb-28">
         <header className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <Link href={routeFor(locale, "/")} className="group inline-flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-full border border-slate-200 bg-white text-sm font-black text-slate-950 shadow-sm transition group-hover:border-blue-300 dark:border-white/10 dark:bg-slate-950 dark:text-white">
-              HK
+            <span className="relative block h-10 w-10 overflow-hidden rounded-full border border-slate-200 bg-white shadow-sm transition group-hover:border-blue-300 dark:border-white/10 dark:bg-slate-950">
+              <Image
+                src={site.profileImage}
+                alt={site.name}
+                fill
+                sizes="40px"
+                className="object-cover"
+              />
             </span>
             <span className="hidden text-sm font-bold text-slate-900 sm:block dark:text-white">{site.name}</span>
           </Link>
@@ -43,6 +50,15 @@ export function AppShell({ locale, children }: AppShellProps) {
             </a>
             <a href={site.linkedin} target="_blank" rel="noreferrer" className="hover:text-blue-600 dark:hover:text-cyan-200">
               LinkedIn
+            </a>
+            <a href={site.instagram} target="_blank" rel="noreferrer" className="hover:text-blue-600 dark:hover:text-cyan-200">
+              Instagram
+            </a>
+            <a href={site.x} target="_blank" rel="noreferrer" className="hover:text-blue-600 dark:hover:text-cyan-200">
+              X
+            </a>
+            <a href={site.telegram} target="_blank" rel="noreferrer" className="hover:text-blue-600 dark:hover:text-cyan-200">
+              Telegram
             </a>
             <a href={`mailto:${site.email}`} className="hover:text-blue-600 dark:hover:text-cyan-200">
               Email
