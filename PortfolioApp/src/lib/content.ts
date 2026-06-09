@@ -11,9 +11,9 @@ export const site = {
 };
 
 export const stats = [
-  { value: "14", label: { tr: "Proje", en: "Projects" } },
-  { value: "7", label: { tr: "Hackathon", en: "Hackathons" } },
-  { value: "13", label: { tr: "Sertifika", en: "Certificates" } },
+  { value: "15", label: { tr: "Proje", en: "Projects" } },
+  { value: "8", label: { tr: "Hackathon", en: "Hackathons" } },
+  { value: "14", label: { tr: "Sertifika", en: "Certificates" } },
   { value: "23", label: { tr: "Liderlik Kanıtı", en: "Leadership Proofs" } }
 ];
 
@@ -21,7 +21,7 @@ export const skills = [
   { category: { tr: "Diller", en: "Languages" }, items: ["TypeScript", "Solidity", "Move", "Rust", "Python", "C++"] },
   { category: { tr: "Frontend & UI", en: "Frontend & UI" }, items: ["Next.js", "React", "Tailwind CSS", "Astro"] },
   { category: { tr: "AI & ML", en: "AI & ML" }, items: ["OpenAI API", "Voice AI", "LLM Workflows", "Model Training"] },
-  { category: { tr: "Web3 & DePIN", en: "Web3 & DePIN" }, items: ["Monad", "Sui", "Solana", "EVM Contracts"] },
+  { category: { tr: "Web3 & DePIN", en: "Web3 & DePIN" }, items: ["Stellar", "Monad", "Sui", "Solana", "EVM Contracts"] },
   { category: { tr: "Sistem & Güvenlik", en: "System & Security" }, items: ["CCNA Networking", "Linux Admin", "Cyber Security"] },
   { category: { tr: "Havacılık & İHA", en: "Aviation & UAV" }, items: ["İHA-I Ticari Pilot", "Avionics", "Drone Operations"] }
 ];
@@ -86,11 +86,47 @@ export const projects: Project[] = [
     media: { src: "/images/proof/frontier-hsankc.png", alt: "Frontier Colosseum proof badge" }
   },
   {
+    title: "Constella",
+    slug: "constella",
+    category: "Stellar / Privacy / Data Marketplace",
+    status: ["Featured", "Awarded", "Hackathon Build", "Team Project"],
+    featuredRank: 2,
+    role: { tr: "Builder / geliştirici", en: "Builder / developer" },
+    summary: {
+      tr:
+        "Stellar Hackathon'da 2.lik kazanan privacy-first data marketplace projesi; kullanıcı verisi üzerinde kontrol, lisanslama, ödeme ve erişim kanıtlarını Stellar üstünde birleştiriyor.",
+      en:
+        "A privacy-first data marketplace that won 2nd place at the Stellar Hackathon, combining user data control, licensing, payments, and access proofs on Stellar."
+    },
+    problem: {
+      tr:
+        "Veri pazarlarında kullanıcılar çoğu zaman verilerinin kim tarafından, hangi koşulla ve ne kadar süreyle kullanıldığını takip edemiyor.",
+      en:
+        "In many data marketplaces, users cannot clearly track who uses their data, under which terms, or for how long."
+    },
+    solution: {
+      tr:
+        "Constella, veri sahipliği ve kullanım izinlerini merkezde tutan; lisanslama, ödeme akışı ve erişim kanıtlarını Stellar tabanlı bir ürün deneyiminde birleştiren bir pazar yeri prototipi.",
+      en:
+        "Constella is a marketplace prototype centered on data ownership and permissions, tying licensing, payment flow, and access proofs into a Stellar-based product experience."
+    },
+    impact: {
+      tr: "2-3 Haziran 2026 Stellar Hackathon'unda Constella projesiyle 2.lik kazanıldı.",
+      en: "Won 2nd place with Constella at the Stellar Hackathon on June 2-3, 2026."
+    },
+    repoUrl: "https://github.com/hsankc/Constella",
+    liveUrl: "https://youtu.be/xbZv584zcuE",
+    eventName: "Stellar Hackathon",
+    award: "Stellar Hackathon 2nd place",
+    techStack: ["Stellar", "Data marketplace", "Privacy", "Licensing", "Payments"],
+    accent: "amber"
+  },
+  {
     title: "News / Truva Haber",
     slug: "news-truva-haber",
     category: "Web / Product",
     status: ["Featured", "Live"],
-    featuredRank: 2,
+    featuredRank: 3,
     role: { tr: "Builder / geliştirici", en: "Builder / developer" },
     summary: {
       tr: "Canlı yayındaki haber ürünü; içerik odaklı web deneyimi ve hızlı yayın akışı üzerine kurulu.",
@@ -117,7 +153,7 @@ export const projects: Project[] = [
     slug: "comu-havacilik-site",
     category: "Club / Production Website",
     status: ["Featured", "Live", "Client Work"],
-    featuredRank: 3,
+    featuredRank: 4,
     role: { tr: "Tasarımcı / geliştirici", en: "Designer / developer" },
     summary: {
       tr:
@@ -146,7 +182,7 @@ export const projects: Project[] = [
     slug: "quakegrid",
     category: "Web3 / Hackathon",
     status: ["Featured", "Live", "Hackathon Build"],
-    featuredRank: 4,
+    featuredRank: 5,
     role: { tr: "Builder / geliştirici", en: "Builder / developer" },
     summary: {
       tr: "Monad Blitz Çanakkale hackathonu için geliştirilen Web3 projesi.",
@@ -477,6 +513,19 @@ export const hackathons: Hackathon[] = [
       en: "One of the first visible Monad builds; QuakeGrid moved into a live demo."
     },
     accent: "cyan"
+  },
+  {
+    title: "Stellar Hackathon",
+    date: "2-3 Haziran 2026",
+    location: "İstanbul",
+    project: "Constella",
+    projectSlug: "constella",
+    outcome: "2nd place",
+    summary: {
+      tr: "Constella ile privacy-first data marketplace fikri geliştirildi ve Stellar üzerinde lisanslama, ödeme ve erişim kanıtları kurgusuyla 2.lik kazanıldı.",
+      en: "Built Constella as a privacy-first data marketplace and won 2nd place with a Stellar-based flow for licensing, payments, and access proofs."
+    },
+    accent: "amber"
   }
 ];
 
@@ -527,7 +576,7 @@ export const certificateGroups = [
   },
   {
     title: { tr: "Cisco / Network / Cybersecurity", en: "Cisco / Network / Cybersecurity" },
-    items: ["CCNA Introduction to Networks", "Introduction to Cybersecurity", "Linux Unhatched"]
+    items: ["CCNA Introduction to Networks", "Introduction to Cybersecurity", "Linux Unhatched", "CyberOps Associate"]
   },
   {
     title: { tr: "AI & Software", en: "AI & Software" },
@@ -559,6 +608,13 @@ export const certificateProofs = [
     group: "Cisco / Network / Cybersecurity",
     date: "22 Şubat 2026",
     document: "/images/certificates/03_Linux_Unhatched_Hasan_Kasikci_2026-02-22.png",
+    type: "image"
+  },
+  {
+    title: { tr: "CyberOps Associate", en: "CyberOps Associate" },
+    group: "Cisco / Network / Cybersecurity",
+    date: "2 Haziran 2026",
+    document: "/images/certificates/11_CyberOps_Associate_Hasan_Kasikci_2026-06-02.jpg",
     type: "image"
   },
   {
@@ -613,6 +669,69 @@ export const certificateProofs = [
 ];
 
 export const eventCards: EventCard[] = [
+  {
+    "title": {
+      "tr": "Stellar Hackathon - Constella",
+      "en": "Stellar Hackathon - Constella"
+    },
+    "event": {
+      "tr": "Stellar Hackathon",
+      "en": "Stellar Hackathon"
+    },
+    "role": {
+      "tr": "2.lik / Hacker",
+      "en": "2nd Place / Hacker"
+    },
+    "year": "2026",
+    "image": "/images/cards/cutouts/event-card-18.png",
+    "sourceImage": "/images/cards/cutouts/event-card-18.png",
+    "accent": "amber",
+    "rotation": -2.4,
+    "hanger": "single",
+    "orientation": "portrait"
+  },
+  {
+    "title": {
+      "tr": "Istanbul Blockchain Week 2026",
+      "en": "Istanbul Blockchain Week 2026"
+    },
+    "event": {
+      "tr": "Istanbul Blockchain Week 2026",
+      "en": "Istanbul Blockchain Week 2026"
+    },
+    "role": {
+      "tr": "Community",
+      "en": "Community"
+    },
+    "year": "2026",
+    "image": "/images/cards/cutouts/event-card-19.png",
+    "sourceImage": "/images/cards/cutouts/event-card-19.png",
+    "accent": "coral",
+    "rotation": 1.7,
+    "hanger": "double",
+    "orientation": "portrait"
+  },
+  {
+    "title": {
+      "tr": "Midnight Turkiye Launch",
+      "en": "Midnight Turkiye Launch"
+    },
+    "event": {
+      "tr": "Midnight Turkiye Launch - Rooftop Event",
+      "en": "Midnight Turkiye Launch - Rooftop Event"
+    },
+    "role": {
+      "tr": "Developer",
+      "en": "Developer"
+    },
+    "year": "2026",
+    "image": "/images/cards/cutouts/event-card-20.png",
+    "sourceImage": "/images/cards/cutouts/event-card-20.png",
+    "accent": "blue",
+    "rotation": -1.1,
+    "hanger": "single",
+    "orientation": "portrait"
+  },
   // ── Kulüp & Etkinlik Kartları ──
   {
     "title": {
@@ -649,8 +768,8 @@ export const eventCards: EventCard[] = [
       "en": "Participant / Staff"
     },
     "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-01.png",
-    "sourceImage": "/images/cards/cutouts/event-card-01.png",
+    "image": "/images/cards/cutouts/event-card-01-redacted.png",
+    "sourceImage": "/images/cards/cutouts/event-card-01-redacted.png",
     "accent": "blue",
     "rotation": 2.2,
     "hanger": "double",
@@ -764,6 +883,27 @@ export const eventCards: EventCard[] = [
   // ── BTK / Hackathon Kartları ──
   {
     "title": {
+      "tr": "Ankara AI Hackathon 2026",
+      "en": "Ankara AI Hackathon 2026"
+    },
+    "event": {
+      "tr": "Ankara AI Hackathon 2026",
+      "en": "Ankara AI Hackathon 2026"
+    },
+    "role": {
+      "tr": "Yarışmacı",
+      "en": "Competitor"
+    },
+    "year": "2026",
+    "image": "/images/cards/cutouts/event-card-03.png",
+    "sourceImage": "/images/cards/cutouts/event-card-03.png",
+    "accent": "teal",
+    "rotation": 2.8,
+    "hanger": "single",
+    "orientation": "portrait"
+  },
+  {
+    "title": {
       "tr": "Ankara BTK Aİ Hackathonu",
       "en": "Ankara BTK AI Hackathon"
     },
@@ -783,28 +923,6 @@ export const eventCards: EventCard[] = [
     "hanger": "single",
     "orientation": "portrait"
   },
-  {
-    "title": {
-      "tr": "BTK AKADEMİ ANKARA Aİ HACKATHON",
-      "en": "BTK AKADEMİ ANKARA AI HACKATHON"
-    },
-    "event": {
-      "tr": "BTK AKADEMİ ANKARA Aİ HACKATHON",
-      "en": "BTK AKADEMİ ANKARA AI HACKATHON"
-    },
-    "role": {
-      "tr": "Katılımcı",
-      "en": "Participant"
-    },
-    "year": "2024-2026",
-    "image": "/images/cards/cutouts/event-card-06.png",
-    "sourceImage": "/images/cards/cutouts/event-card-06.png",
-    "accent": "blue",
-    "rotation": 0.9,
-    "hanger": "single",
-    "orientation": "portrait"
-  },
-  // ── Monad Blitz Hackathon Serisi ──
   {
     "title": {
       "tr": "MONAD BLİTZ ANKARA",
@@ -962,4 +1080,3 @@ export function text(value: { tr: string; en: string }, locale: Locale) {
 export function getProject(slug: string) {
   return projects.find((project) => project.slug === slug);
 }
-
