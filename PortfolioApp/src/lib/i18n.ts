@@ -23,6 +23,7 @@ export const dictionary = {
       projects: "Projeler",
       hackathons: "Hackathonlar",
       cards: "Kartlar",
+      gallery: "Galeri",
       proof: "Sertifikalar",
       writing: "Yazılar",
       contact: "İletişim"
@@ -62,6 +63,9 @@ export const dictionary = {
       cardsTitle: "Kartlarım",
       cardsLead:
         "Katıldığım etkinliklerden kalan yaka kartları, rozetler ve program kartları. Hepsi askıya asılmış gibi, hatıra duvarında sergileniyor.",
+      galleryTitle: "Galeri",
+      galleryLead:
+        "Hackathonlar, etkinlikler ve sahadan kalan görsel notlar. Fotoğraflar web için küçültülmüş kopyalarla hızlı yüklenecek şekilde yayınlanıyor.",
       proofTitle: "Sertifikalar",
       proofLead:
         "Sertifika ve katılım belgeleri doğrudan PDF/JPG dosyalarıyla yayınlanır; her belge karttan açılabilir.",
@@ -79,6 +83,7 @@ export const dictionary = {
       projects: "Projects",
       hackathons: "Hackathons",
       cards: "Cards",
+      gallery: "Gallery",
       proof: "Certificates",
       writing: "Writing",
       contact: "Contact"
@@ -118,6 +123,9 @@ export const dictionary = {
       cardsTitle: "Cards",
       cardsLead:
         "Event badges, passes, and schedule cards collected along the way, displayed like a hanging memory wall.",
+      galleryTitle: "Gallery",
+      galleryLead:
+        "Visual notes from hackathons, events, and build days. The photos are published as web-sized copies so the page stays fast.",
       proofTitle: "Certificates",
       proofLead:
         "Certificates and participation documents are published directly as PDF/JPG files; each document can be opened from its card.",

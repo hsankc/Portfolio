@@ -54,6 +54,19 @@ export type Hackathon = {
   summary: LocalizedText;
   outcome?: string;
   projectSlug?: string;
+  gallery?: string[];
+  galleryPreviewPosition?: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+  accent: "blue" | "cyan" | "teal" | "amber" | "coral";
+};
+
+export type GalleryItem = {
+  id: string;
+  title: LocalizedText;
+  event: LocalizedText;
+  date: string;
+  location: string;
+  image: string;
+  alt: LocalizedText;
   accent: "blue" | "cyan" | "teal" | "amber" | "coral";
 };
 

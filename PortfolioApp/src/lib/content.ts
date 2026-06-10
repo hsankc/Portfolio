@@ -1,4 +1,4 @@
-import type { Hackathon, Locale, Project, ProofItem, EventCard } from "@/types/content";
+import type { EventCard, GalleryItem, Hackathon, Locale, Project, ProofItem } from "@/types/content";
 
 export const site = {
   name: "Hasan Kaşıkcı",
@@ -432,6 +432,164 @@ export const featuredProjects = projects
   .filter((project) => project.featuredRank)
   .sort((a, b) => Number(a.featuredRank) - Number(b.featuredRank));
 
+export const galleryItems: GalleryItem[] = [
+  {
+    id: "sui-ankara-01",
+    title: { tr: "Sui Hackathon", en: "Sui Hackathon" },
+    event: { tr: "Sui Hackathon", en: "Sui Hackathon" },
+    date: "27 Aralık 2025",
+    location: "Ankara",
+    image: "/images/gallery/sui-ankara-01.jpg",
+    alt: { tr: "Sui Hackathon etkinliğinden ekip fotoğrafı", en: "Team photo from Sui Hackathon" },
+    accent: "teal"
+  },
+  {
+    id: "monad-ankara-01",
+    title: { tr: "Monad Blitz Ankara", en: "Monad Blitz Ankara" },
+    event: { tr: "Monad Blitz Ankara", en: "Monad Blitz Ankara" },
+    date: "31 Ocak 2026",
+    location: "Ankara",
+    image: "/images/gallery/monad-ankara-01.jpg",
+    alt: { tr: "Monad Blitz Ankara etkinlik fotoğrafı", en: "Monad Blitz Ankara event photo" },
+    accent: "teal"
+  },
+  {
+    id: "monad-ankara-02",
+    title: { tr: "Monad Blitz Ankara", en: "Monad Blitz Ankara" },
+    event: { tr: "Monad Blitz Ankara", en: "Monad Blitz Ankara" },
+    date: "31 Ocak 2026",
+    location: "Ankara",
+    image: "/images/gallery/monad-ankara-02.jpg",
+    alt: { tr: "Monad Blitz Ankara sahne ve katılım fotoğrafı", en: "Monad Blitz Ankara stage and attendance photo" },
+    accent: "teal"
+  },
+  {
+    id: "btk-ai-01",
+    title: { tr: "BTK Akademi AI Hackathon", en: "BTK Academy AI Hackathon" },
+    event: { tr: "BTK Akademi AI Hackathon", en: "BTK Academy AI Hackathon" },
+    date: "6 Şubat 2026",
+    location: "Ankara",
+    image: "/images/gallery/btk-ai-01.jpg",
+    alt: { tr: "BTK Akademi AI Hackathon katılım fotoğrafı", en: "BTK Academy AI Hackathon participation photo" },
+    accent: "coral"
+  },
+  {
+    id: "btk-ai-02",
+    title: { tr: "BTK Akademi AI Hackathon", en: "BTK Academy AI Hackathon" },
+    event: { tr: "BTK Akademi AI Hackathon", en: "BTK Academy AI Hackathon" },
+    date: "6 Şubat 2026",
+    location: "Ankara",
+    image: "/images/gallery/btk-ai-02.jpg",
+    alt: { tr: "BTK Akademi AI Hackathon çalışma alanı fotoğrafı", en: "BTK Academy AI Hackathon workspace photo" },
+    accent: "coral"
+  },
+  {
+    id: "monad-istanbul-01",
+    title: { tr: "Monad Blitz İstanbul", en: "Monad Blitz Istanbul" },
+    event: { tr: "Monad Blitz İstanbul", en: "Monad Blitz Istanbul" },
+    date: "28 Şubat 2026",
+    location: "İstanbul",
+    image: "/images/gallery/monad-istanbul-01.jpg",
+    alt: { tr: "Monad Blitz İstanbul etkinlik fotoğrafı", en: "Monad Blitz Istanbul event photo" },
+    accent: "coral"
+  },
+  {
+    id: "monad-istanbul-02",
+    title: { tr: "Monad Blitz İstanbul", en: "Monad Blitz Istanbul" },
+    event: { tr: "Monad Blitz İstanbul", en: "Monad Blitz Istanbul" },
+    date: "28 Şubat 2026",
+    location: "İstanbul",
+    image: "/images/gallery/monad-istanbul-02.jpg",
+    alt: { tr: "Monad Blitz İstanbul topluluk fotoğrafı", en: "Monad Blitz Istanbul community photo" },
+    accent: "coral"
+  },
+  {
+    id: "monad-izmir-01",
+    title: { tr: "Monad Blitz İzmir", en: "Monad Blitz Izmir" },
+    event: { tr: "Monad Blitz İzmir", en: "Monad Blitz Izmir" },
+    date: "28 Nisan 2026",
+    location: "İzmir",
+    image: "/images/gallery/monad-izmir-01.jpg",
+    alt: { tr: "Monad Blitz İzmir 2.lik anı fotoğrafı", en: "Monad Blitz Izmir 2nd place moment photo" },
+    accent: "blue"
+  },
+  {
+    id: "monad-izmir-02",
+    title: { tr: "Monad Blitz İzmir", en: "Monad Blitz Izmir" },
+    event: { tr: "Monad Blitz İzmir", en: "Monad Blitz Izmir" },
+    date: "28 Nisan 2026",
+    location: "İzmir",
+    image: "/images/gallery/monad-izmir-02.jpg",
+    alt: { tr: "Monad Blitz İzmir etkinlik fotoğrafı", en: "Monad Blitz Izmir event photo" },
+    accent: "blue"
+  },
+  {
+    id: "monad-izmir-03",
+    title: { tr: "Monad Blitz İzmir", en: "Monad Blitz Izmir" },
+    event: { tr: "Monad Blitz İzmir", en: "Monad Blitz Izmir" },
+    date: "28 Nisan 2026",
+    location: "İzmir",
+    image: "/images/gallery/monad-izmir-03.jpg",
+    alt: { tr: "Monad Blitz İzmir katılım fotoğrafı", en: "Monad Blitz Izmir participation photo" },
+    accent: "blue"
+  },
+  {
+    id: "frontier-01",
+    title: { tr: "Frontier / Colosseum", en: "Frontier / Colosseum" },
+    event: { tr: "Frontier / Colosseum / SuperTeam", en: "Frontier / Colosseum / SuperTeam" },
+    date: "8-11 Mayıs 2026",
+    location: "Online",
+    image: "/images/gallery/frontier-01.jpg",
+    alt: { tr: "Frontier online hackathon katılım kartı", en: "Frontier online hackathon participation card" },
+    accent: "amber"
+  },
+  {
+    id: "monad-canakkale-01",
+    title: { tr: "Monad Blitz Çanakkale", en: "Monad Blitz Canakkale" },
+    event: { tr: "Monad Blitz Çanakkale", en: "Monad Blitz Canakkale" },
+    date: "16 Mayıs 2026",
+    location: "Çanakkale",
+    image: "/images/gallery/monad-canakkale-01.jpg",
+    alt: { tr: "Monad Blitz Çanakkale etkinlik fotoğrafı", en: "Monad Blitz Canakkale event photo" },
+    accent: "cyan"
+  },
+  {
+    id: "stellar-01",
+    title: { tr: "Stellar Hackathon", en: "Stellar Hackathon" },
+    event: { tr: "Stellar Hackathon", en: "Stellar Hackathon" },
+    date: "2-3 Haziran 2026",
+    location: "İstanbul",
+    image: "/images/gallery/stellar-01.jpg",
+    alt: { tr: "Stellar Hackathon katılım fotoğrafı", en: "Stellar Hackathon participation photo" },
+    accent: "amber"
+  },
+  {
+    id: "stellar-02",
+    title: { tr: "Stellar Hackathon 2.lik", en: "Stellar Hackathon 2nd Place" },
+    event: { tr: "Stellar Hackathon", en: "Stellar Hackathon" },
+    date: "2-3 Haziran 2026",
+    location: "İstanbul",
+    image: "/images/gallery/stellar-02.jpg",
+    alt: { tr: "Stellar Hackathon 2.lik anı", en: "Stellar Hackathon 2nd place moment" },
+    accent: "amber"
+  },
+  {
+    id: "midnight-rooftop-01",
+    title: { tr: "Midnight Türkiye Launch", en: "Midnight Turkiye Launch" },
+    event: { tr: "Midnight Türkiye Launch - Rooftop Event", en: "Midnight Turkiye Launch - Rooftop Event" },
+    date: "2026",
+    location: "İstanbul",
+    image: "/images/gallery/midnight-rooftop-01.jpg",
+    alt: { tr: "Midnight Türkiye Launch rooftop etkinlik kartı", en: "Midnight Turkiye Launch rooftop event card" },
+    accent: "blue"
+  }
+];
+
+export function getGalleryItems(ids: string[] = []) {
+  const byId = new Map(galleryItems.map((item) => [item.id, item]));
+  return ids.map((id) => byId.get(id)).filter((item): item is GalleryItem => Boolean(item));
+}
+
 export const hackathons: Hackathon[] = [
   {
     title: "Sui Hackathon",
@@ -443,6 +601,7 @@ export const hackathons: Hackathon[] = [
       tr: "Move/Sui ekosisteminde ekip projesiyle Web3 üretim alanı genişledi.",
       en: "The Web3 build range expanded through a team project in the Move/Sui ecosystem."
     },
+    gallery: ["sui-ankara-01"],
     accent: "teal"
   },
   {
@@ -455,6 +614,8 @@ export const hackathons: Hackathon[] = [
       tr: "AI ve Monad fikrini birleştiren hackathon projesi.",
       en: "A hackathon project combining AI and Monad ideas."
     },
+    gallery: ["monad-ankara-01", "monad-ankara-02"],
+    galleryPreviewPosition: "top-left",
     accent: "teal"
   },
   {
@@ -467,6 +628,7 @@ export const hackathons: Hackathon[] = [
       tr: "AI odaklı ekip projesi ve resmi katılım kanıtı ile desteklenen hackathon deneyimi.",
       en: "An AI-focused team build backed by official participation proof."
     },
+    gallery: ["btk-ai-02", "btk-ai-01"],
     accent: "coral"
   },
   {
@@ -478,6 +640,8 @@ export const hackathons: Hackathon[] = [
       tr: "Aynı hackathon çizgisinde iki farklı Web3 prototipi üretildi.",
       en: "Two separate Web3 prototypes were built within the same hackathon track."
     },
+    gallery: ["monad-istanbul-01", "monad-istanbul-02"],
+    galleryPreviewPosition: "bottom-right",
     accent: "coral"
   },
   {
@@ -491,6 +655,8 @@ export const hackathons: Hackathon[] = [
       tr: "NeuralAir v1 ile 2.lik kazanıldı; proje daha sonra gelişmiş v2 sürümüne evrildi.",
       en: "NeuralAir v1 won 2nd place and later evolved into a more advanced v2."
     },
+    gallery: ["monad-izmir-01", "monad-izmir-02", "monad-izmir-03"],
+    galleryPreviewPosition: "bottom-right",
     accent: "blue"
   },
   {
@@ -503,6 +669,7 @@ export const hackathons: Hackathon[] = [
       tr: "NeuralAir’in gelişmiş v2 sürümü Frontier/Colosseum sürecine taşındı.",
       en: "The advanced v2 of NeuralAir was carried into the Frontier/Colosseum track."
     },
+    gallery: ["frontier-01"],
     accent: "amber"
   },
   {
@@ -515,6 +682,7 @@ export const hackathons: Hackathon[] = [
       tr: "Monad ekosistemindeki ilk görünür üretimlerden biri; QuakeGrid canlı demoya taşındı.",
       en: "One of the first visible Monad builds; QuakeGrid moved into a live demo."
     },
+    gallery: ["monad-canakkale-01"],
     accent: "cyan"
   },
   {
@@ -528,6 +696,7 @@ export const hackathons: Hackathon[] = [
       tr: "Constella ile privacy-first data marketplace fikri geliştirildi ve Stellar üzerinde lisanslama, ödeme ve erişim kanıtları kurgusuyla 2.lik kazanıldı.",
       en: "Built Constella as a privacy-first data marketplace and won 2nd place with a Stellar-based flow for licensing, payments, and access proofs."
     },
+    gallery: ["stellar-02", "stellar-01"],
     accent: "amber"
   }
 ];

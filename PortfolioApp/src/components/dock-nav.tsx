@@ -3,10 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { Award, FolderKanban, Home, IdCard, Languages, Mail, Newspaper, Sparkles, Trophy } from "lucide-react";
+import { Award, FolderKanban, Home, IdCard, Images, Mail, Newspaper, Sparkles, Trophy } from "lucide-react";
 import type { Locale } from "@/types/content";
-import { alternateLocale, dictionary, routeFor } from "@/lib/i18n";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { dictionary, routeFor } from "@/lib/i18n";
 
 type DockNavProps = {
   locale: Locale;
@@ -17,6 +16,7 @@ const icons = {
   projects: FolderKanban,
   hackathons: Trophy,
   cards: IdCard,
+  gallery: Images,
   proof: Award,
   writing: Newspaper,
   contact: Mail
@@ -30,15 +30,11 @@ export function DockNav({ locale }: DockNavProps) {
     { key: "projects", href: routeFor(locale, "/projects") },
     { key: "hackathons", href: routeFor(locale, "/hackathons") },
     { key: "cards", href: routeFor(locale, "/cards") },
+    { key: "gallery", href: routeFor(locale, "/gallery") },
     { key: "proof", href: routeFor(locale, "/proof") },
     { key: "writing", href: routeFor(locale, "/writing") },
     { key: "contact", href: routeFor(locale, "/contact") }
   ] as const;
-
-  const otherLocale = alternateLocale(locale);
-  const localeHref = pathname?.startsWith("/en")
-    ? pathname.replace(/^\/en/, "") || "/"
-    : `/en${pathname === "/" ? "" : pathname}`;
 
   return (
     <div className="fixed inset-x-0 z-50 flex justify-center px-4" style={{ bottom: 'calc(1rem + env(safe-area-inset-bottom))' }}>
@@ -68,16 +64,6 @@ export function DockNav({ locale }: DockNavProps) {
             </motion.div>
           );
         })}
-        <Link
-          href={localeHref}
-          hrefLang={otherLocale}
-          aria-label={copy.actions.switchLanguage}
-          title={copy.actions.switchLanguage}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition hover:-translate-y-0.5 hover:border-teal-300 hover:text-teal-700 dark:border-white/10 dark:text-slate-300 dark:hover:border-cyan-300 dark:hover:text-cyan-200"
-        >
-          <Languages className="h-5 w-5" />
-        </Link>
-        <ThemeToggle label={copy.actions.theme} />
       </nav>
     </div>
   );

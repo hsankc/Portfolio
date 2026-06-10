@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { projects, site } from "@/lib/content";
 import { routeFor } from "@/lib/i18n";
 
-const staticPaths = ["/", "/projects", "/hackathons", "/cards", "/proof", "/writing", "/contact"];
+const staticPaths = ["/", "/projects", "/hackathons", "/cards", "/gallery", "/proof", "/writing", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls = staticPaths.flatMap((path) => [

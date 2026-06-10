@@ -3,7 +3,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
-export function ThemeToggle({ label }: { label: string }) {
+export function ThemeToggle({ label, compact = false }: { label: string; compact?: boolean }) {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -27,9 +27,11 @@ export function ThemeToggle({ label }: { label: string }) {
       aria-label={label}
       title={label}
       onClick={toggleTheme}
-      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white/85 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-600 dark:border-white/10 dark:bg-slate-950/85 dark:text-slate-200 dark:hover:border-cyan-300 dark:hover:text-cyan-200"
+      className={`inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/85 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-600 dark:border-white/10 dark:bg-slate-950/85 dark:text-slate-200 dark:hover:border-cyan-300 dark:hover:text-cyan-200 ${
+        compact ? "h-9 w-9" : "h-11 w-11"
+      }`}
     >
-      {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+      {isDark ? <Sun className={compact ? "h-4 w-4" : "h-5 w-5"} /> : <Moon className={compact ? "h-4 w-4" : "h-5 w-5"} />}
     </button>
   );
 }

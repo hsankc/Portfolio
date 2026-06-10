@@ -112,13 +112,13 @@ export function HomePage({ locale }: { locale: Locale }) {
                   {/* InterKey Venture */}
                   <div className="group relative rounded-xl border border-slate-100 bg-slate-50/50 p-5 transition hover:border-blue-200 hover:bg-white dark:border-white/5 dark:bg-slate-900/30 dark:hover:border-blue-500/30 dark:hover:bg-slate-900/60">
                     <div className="flex items-start gap-4">
-                      <div className="relative grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-sm dark:border-white/10 dark:bg-white">
+                      <div className="relative grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-lg border border-slate-200 bg-white p-1 shadow-sm dark:border-white/10 dark:bg-white">
                         <Image
                           src="/images/logos/interkey-logo.png"
                           alt="InterKey logo"
                           fill
                           sizes="64px"
-                          className="object-contain p-1.5"
+                          className="object-contain p-0.5"
                         />
                       </div>
                       <div className="min-w-0 flex-1">
@@ -137,13 +137,13 @@ export function HomePage({ locale }: { locale: Locale }) {
                   {/* ilion7 Venture */}
                   <div className="group relative rounded-xl border border-slate-100 bg-slate-50/50 p-5 transition hover:border-purple-200 hover:bg-white dark:border-white/5 dark:bg-slate-900/30 dark:hover:border-purple-500/30 dark:hover:bg-slate-900/60">
                     <div className="flex items-start gap-4">
-                      <div className="relative grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-sm dark:border-white/10 dark:bg-white">
+                      <div className="relative grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-lg border border-slate-200 bg-white p-1 shadow-sm dark:border-white/10 dark:bg-white">
                         <Image
                           src="/images/logos/ilion7-logo.png"
                           alt="ilion7.web logo"
                           fill
                           sizes="64px"
-                          className="object-contain p-1.5"
+                          className="object-contain p-0.5"
                         />
                       </div>
                       <div className="min-w-0 flex-1">
